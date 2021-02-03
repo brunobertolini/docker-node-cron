@@ -1,0 +1,6 @@
+/var/log/cron.log {
+    hourly
+    size 1k
+    copytruncate
+    rotate 2
+}
