@@ -1,0 +1,2 @@
+# Usage
+* * * * * root node $WORKDIR/job.js >> /var/log/cron.log 2>&1

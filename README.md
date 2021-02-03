@@ -25,6 +25,12 @@ Crontab file is not set as volume because we need change them to set env vars in
 * * * * * root cd $WORKDIR && yarn your_job_command >> /var/log/cron.log 2>&1
 ```
 
+## Running example
+
+Just do:
+1. `cd example`
+2. `docker-compose up cronjobs`
+
 ## Logs
 
 If you can see logs, or add to a volume, you can add: `./youlog:/var/logs` to yout volumes config.

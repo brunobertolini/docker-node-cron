@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  cronjobs:
+    image: brunobertolini/node-cron:0.1.0
+    container_name: cronjobs
+    env_file:
+      - .env
+    environment:
+      - CRONTAB_FILE=./crontab
+    volumes:
+      - .:/usr/src/app
+      - ./.log:/var/log
